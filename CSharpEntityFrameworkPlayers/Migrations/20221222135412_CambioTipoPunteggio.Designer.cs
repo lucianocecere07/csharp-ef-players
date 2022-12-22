@@ -3,6 +3,7 @@ using CSharpEntityFrameworkPlayers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CSharpEntityFrameworkPlayers.Migrations
 {
     [DbContext(typeof(SportContext))]
-    partial class SportContextModelSnapshot : ModelSnapshot
+    [Migration("20221222135412_CambioTipoPunteggio")]
+    partial class CambioTipoPunteggio
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

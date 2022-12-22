@@ -10,9 +10,11 @@ using System.Threading.Tasks;
 namespace CSharpEntityFrameworkPlayers
 {
     //Milestone 0
+    //creazione entità
     [Table("players")]
     public class Player
     {
+        //proprietà e data annotations
         public int PlayerId { get; set; }
 
         [Required]
@@ -24,7 +26,7 @@ namespace CSharpEntityFrameworkPlayers
         public string Surname { get; set; }
 
         [Column("punteggio")]
-        public int Score { get; set; }
+        public double Score { get; set; }
 
         [Column("partite_giocate")]
         public int Match { get; set; }

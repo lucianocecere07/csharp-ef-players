@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEntityFrameworkPlayers
 {
+    //creazione del database
     public class SportContext : DbContext
     {
         public DbSet<Player> Players { get; set; }
