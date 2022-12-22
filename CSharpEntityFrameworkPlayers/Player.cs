@@ -19,19 +19,22 @@ namespace CSharpEntityFrameworkPlayers
 
         [Required]
         [Column("nome")]
-        public string Name { get; set; }
+        public string name { get; set; }
 
         [Required]
         [Column("cognome")]
-        public string Surname { get; set; }
+        public string surname { get; set; }
 
         [Column("punteggio")]
-        public double Score { get; set; }
+        public double score { get; set; }
 
         [Column("partite_giocate")]
-        public int Match { get; set; }
+        public int match { get; set; }
 
         [Column("partite_vinte")]
-        public int Win { get; set; }
+        public int win { get; set; }
+
+        //relazione 1-n con Team
+        public Team team { get; set; }
     }
 }
