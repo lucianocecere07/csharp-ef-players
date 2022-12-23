@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CSharpEntityFrameworkPlayers.Migrations
 {
     [DbContext(typeof(SportContext))]
-    [Migration("20221222172531_NuovoDbase")]
-    partial class NuovoDbase
+    [Migration("20221223090815_NuovoDbas")]
+    partial class NuovoDbas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

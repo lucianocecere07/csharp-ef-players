@@ -30,13 +30,13 @@ using (SportContext db = new SportContext())
 
     //aggiungere nuovo giocatore nel database
     db.Add(newPlayer);
-    db.SaveChanges();
+    //db.SaveChanges();
     Console.WriteLine("aggiunto nuovo giocatore");
 
     //lettura del nuovo giocatore
     List<Player> Players = db.Players.OrderBy(newPlayer => newPlayer.name).ToList<Player>();
 
-    db.SaveChanges();
+    //db.SaveChanges();
     Console.WriteLine("letto nuovo giocatore");
 
 
@@ -45,14 +45,14 @@ using (SportContext db = new SportContext())
     newPlayer.surname = "Doncic";
 
     //modificare il nuovo giocatore nel database
-    db.SaveChanges();
+    //db.SaveChanges();
     Console.WriteLine("modifica del nuovo giocatore");
 
 
     //cancellare il nuovo giocatore dal database
     db.Remove(newPlayer);
 
-    db.SaveChanges();
+    //db.SaveChanges();
     Console.WriteLine("cancellazione del nuovo giocatore");
 
     //Milestone 3
@@ -66,7 +66,7 @@ using (SportContext db = new SportContext())
     db.Add(newPlayer2);
     db.Add(newPlayer3);
 
-    db.SaveChanges();
+    //db.SaveChanges();
     Console.WriteLine("aggiunti i nuovi giocatori in database");
 
     //aggiungere alla lista

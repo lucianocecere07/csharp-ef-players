@@ -5,7 +5,7 @@
 namespace CSharpEntityFrameworkPlayers.Migrations
 {
     /// <inheritdoc />
-    public partial class NuovoDbase : Migration
+    public partial class NuovoDbas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
